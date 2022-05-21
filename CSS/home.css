@@ -269,12 +269,6 @@ img{
     overflow: auto;
 }
 
-
-.cardbtn:hover{
-    opacity: .8;
-    text-decoration: underline;
-    background: grey;
-
 }
 .container {
     display: flex;
@@ -282,6 +276,10 @@ img{
     justify-content: center;
     margin: .5em;
 }
+.cardbtn:hover{
+    opacity: .8;
+    text-decoration: underline;
+    background: grey;
 
 }
 
