@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+@import url('nav.css');
+@import url('footer.css');
+@import url('galeria.css');
+@import url('formulario.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    display: -ms-inline-grid; 
+    min-height: 100vh;   
+}
+
+img{
+    max-width: 100%;
+}
+/*logo*/
+.logo1{
+    padding: .8em;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 2.25rem;   
+    cursor: pointer;
+}
+
+/*Encabezado*/
+
+.heroe{
+    width: 100%;
+    height: calc(100vh - 8em);
+    background-image:url('https://f8n-production.s3.us-east-2.amazonaws.com/collections/js6j7ux00-purple_brick.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 1rem #3c057a;
+}
+/*productos*/
+.productos{
+        position: relative;
+        overflow: hidden;
+        padding: 1.1em 0;
+        background-image: url(../IMG/fondo.png);
+        background-size: cover;
+
+}
+.categoria{
+    padding: 0 10vw;
+    font-size: 1.2rem;
+    font-weight: 1.5rem;
+    margin-bottom: 1.5em;
+    text-transform: capitalize;
+    color: #fff;
+}
+.productcont{
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    scroll-behavior: smooth;
+}
+
+
+.cardprod{
+    flex: 0 0 auto;
+    width: 12em;
+    height: 25em;
+    margin-right: 2em;
+}
+.prodimg{
+    position: relative;
+    width: 100%;
+    height: 19em;
+    border-radius: 2em;
+    opacity: .9;
+}
+
+.prod1{
+    width: 100%;
+    height: 19em;
+    object-fit: cover;
+    border-radius: 1em;
+}
+.prod1:focus{
+    z-index: 2;
+}
+.descuento{
+    position: absolute;
+    background: #3c057a;
+    padding: .5em;
+    color: white;
+    border-radius: .5em;
+    right: .1em;
+    text-transform: capitalize;
+    opacity: 0.8;
+}
+.cardbtn{
+    position: absolute;
+    bottom: .5em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5em;
+    width: 90%;
+    text-transform: capitalize;
+    opacity: .9;
+    outline: none;
+    background: #3c057a;
+    color: #fff;
+    border-radius: .3em;
+    cursor: pointer;
+    animation: btncompra 2s infinite;
+}
+.cardprod:hover .cardbtn{
+    opacity: .8;
+    text-decoration: underline;
+    background: grey;
+
+}
+
+/*Descripcion de productos*/
+.infoprod{
+    width: 100%;
+    height: 8em;
+    padding-top: .5em;
+    color: #fff ;
+    scroll-behavior: smooth;
+}
+.prodmarc{
+    text-transform: uppercase;
+}
+.proddesc{
+    width: 100%;
+    padding-top: .1em;
+    opacity: .7;
+    text-transform: capitalize;
+    margin: .4em 0 ;
+    font-size: .7rem;
+}
+.precio{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.precioreal{
+    margin-left: 1em;
+    opacity: .5;
+    text-decoration: line-through;
+}
+
+
+/*Media queries*/
+
+
+/*Enfoque principal en la pagina de productos, el armado de esta pagina es desktop [1366*768] */
+
+/*Tablets*/
+@media screen and (max-width: 900px){
+
+    
+
+    .galeria{
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        padding: 6em;
+        margin: 2em;
+        overflow-x: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .productcont{
+        padding: 1em;
+        margin: 2em;
+        gap: 1.2em;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: flex-start;
+    }
+    .formdetails{
+        display: flex;
+        flex-direction: column;
+        padding: .5em;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+}
+
+/*Celulares */
+@media screen and (max-width: 500px) {
+
+    
+    
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+    }
+
+    .footercont{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 1em;
+        margin: 1em;
+        width: 100%;
+        
+    }
+    .productos{
+    background-image: black;
+    }
+
+    .galeria{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 6em;
+        margin: 2em;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* .categorias{
+        display: flex;
+        text-align: center;
+        padding: 6em;
+        margin: 1em;
+        flex-direction: column;
+        justify-content: center; 
+    }*/
+    
+    .categor1{
+        display: none;
+    }
+    
+    .productcont{
+    padding: 1em;
+    margin: 2em;
+    gap: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-self: center;
+}
+.formdetails{
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.cardbtn:hover{
+    opacity: .8;
+    text-decoration: underline;
+    background: grey;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5em;
+}
+
+}
+

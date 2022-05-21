@@ -1,0 +1,71 @@
+/*navbar*/
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(#3c057a, black);
+    z-index: 9;
+}
+.nav{
+    padding: .8em 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+/*items*/
+
+.navitems{
+    display: flex;
+    align-items: center;
+}
+.busqueda{
+    width: 18em;
+    display: flex;
+}
+.buscar{
+    width: 80%;
+    height: 2.5em;
+    padding: .8em ;
+    border: .3em solid rgb(255, 255, 255) ;
+    color: white;
+    border-top-left-radius: .8em;
+    border-bottom-left-radius: .8em;
+    text-transform: capitalize;
+    background: none;
+    outline: none;
+}
+.btnbusc{
+    width: 20%;
+    border-top-right-radius: .8em;
+    border-bottom-right-radius: .8em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: #3c057a;
+} 
+/*enlaces*/
+
+.linkscont{
+    width: 100%;
+    display: flex;
+    padding: .8em 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: .1em solid #3c057a;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 .8em;
+    margin: 0 .4em;
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 0.5;
+    transition: .5s;
+}
+.link:hover{
+    opacity: 1;
+    text-decoration:underline;
+}

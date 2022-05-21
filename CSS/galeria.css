@@ -1,0 +1,99 @@
+/*Galeria de productos*/
+.galeria{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 6em;
+    margin: 2em;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+.cardgaleria , .imgcard {
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    border: .5em #fff solid;
+    border-radius: 1em;
+    object-fit: cover;
+    position: relative;
+    align-items: center;
+}
+ .infoproducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .productos{
+    position: relative;
+    overflow: hidden;
+    padding: 1.1em 0;
+    background-image: url(../IMG/fondo.png);
+
+} */
+.categoria{
+padding: 0 10vw;
+font-size: 1.2rem;
+font-weight: 1.5rem;
+margin-bottom: 1.5em;
+text-transform: capitalize;
+color: #fff;
+}
+.productcont{
+padding: 0 10vw;
+display: flex;
+justify-content: space-between;
+align-items:flex-end;
+scroll-behavior: smooth;
+opacity: .85;
+}
+.productcont::-webkit-scrollbar{
+display: none;
+}
+
+.cardprod1{
+flex: 0 0 auto;
+width: 12em;
+height: 25em;
+margin-right: 2em;
+}
+.prodimg2{
+position: relative;
+width: 100%;
+height: 19em;
+border-radius: 3em;
+opacity: .8;
+}
+
+.prod1{
+width: 100%;
+height: 19em;
+object-fit: cover;
+}
+.prod2:focus{
+z-index: 2;
+}
+.cardbtn{
+    position: absolute;
+    bottom: .5em;
+    left: 50%;
+    padding: .5em;
+    width: 90%;
+    text-transform: capitalize;
+    opacity: .9;
+    outline: none;
+    background: #3c057a;
+    color: #fff;
+    border-radius: 3em;
+    cursor: pointer;
+    
+}
+.cardprod:hover .cardbtn{
+    opacity: .8;
+    text-decoration: underline;
+    background: grey;
+}
