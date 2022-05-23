@@ -283,3 +283,42 @@ img{
 
 }
 
+
+/*Animation*/
+
+/* @keyframes brillo {
+    100%{
+        text-shadow: 0 0 1.2em #fff ;
+        text-shadow: 0 0 1.2em #fff ;
+        text-shadow: 0 0 1.3em #fff ;
+        text-shadow: 0 0 1.4em #3c057a;
+        text-shadow: 0 0 1.3em #3c057a ;
+        text-shadow: 0 0 1.4em #3c057a ;
+        text-shadow: 0 0 1.2em #3c057a ;
+    }
+    0%{
+        text-shadow: 0 0 1.2em #fff ;
+        text-shadow: 0 0 1.2em #fff ;
+        text-shadow: 0 0 1.3em #fff ;
+        text-shadow: 0 0 1.4em #3c057a;
+        text-shadow: 0 0 1.3em #3c057a ;
+        text-shadow: 0 0 1.4em #3c057a ;
+        text-shadow: 0 0 1.2em #3c057a ;
+    } */
+    h1 .hero1{
+        position: relative;
+        font-weight: 500;
+        /* animation: brillo 4s ease-in-out infinite alternate; */
+        cursor: pointer;
+        transition: 3s;
+    }
+    h1 .hero1:hover{
+        color: #fff;
+        text-shadow: 0 0 4em#3c057a;
+        text-shadow: 0 0 8em #3c057a;
+        text-shadow: 0 0 12em #3c057a;
+        text-shadow: 0 0 16em #3c057a;
+        text-shadow: 0 0 18em #3c057a;
+    }
+
+
